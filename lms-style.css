@@ -1,0 +1,433 @@
+
+
+article{
+    background:white;
+}
+
+strong{
+    color: #444;
+}
+
+.features-content-subtitle-lms .icdl-logo{
+    width: 4rem;
+}
+
+
+/*====================================================
+               SCROLL EFFECTS / Links
+=====================================================*/
+
+#unos, 
+#obuke,
+#testiranje,
+#izvestaji,
+#admin {
+    scroll-margin-top: 80px; 
+    scroll-behavior: smooth;
+}
+#primena_benefiti{
+    scroll-margin-top: 70px; 
+    scroll-behavior: smooth;
+}
+
+.link-1:hover .form-text,
+.link-1:hover .form-text ion-icon {
+    color: white;
+    /* transform:scale(1.05, 1.05); */
+    
+}
+
+.vrh span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    font-size: 15px;
+    color: #0071a0;
+}
+
+.vrh:hover{
+    text-decoration: underline;
+}
+
+/*============== END Scroll Effects =================*/
+
+/* KONSTANTE */
+.simple-section {
+    padding: 20px;
+}
+
+.simple-section .container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.features-content-subtitle-lms{
+    color: white;
+    font-size: 25px;
+    margin-top: 10px;
+    background: #0071a0;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    font-size: clamp(1.316rem, 1vw + 0.5rem, 1.5rem); /* dinamika */
+    box-shadow: 2px 2px 8px rgba(137, 152, 174, 0.7);
+}
+
+.features-content-subtitle-lms .icon-unos{
+    color: white;
+    margin-left: 2%;
+    font-size: 40px;
+}
+/**/
+
+
+/*=================================================================
+                            HERO                                   
+===================================================================*/
+
+.hero-form{
+    justify-content: center;
+    gap: 25px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.hero .container-menu {
+    padding: 70px 10%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 1rem;
+    align-items: center;
+    cursor: pointer;
+}
+
+.hero-content .hero-title{
+    line-height: 1;
+}
+
+.link-1{
+    width: auto;
+}
+
+.link-1 .form-text {
+    font-size: 12px;
+    color: #444;
+    margin: 0;
+}
+.link-1 .front{
+    color: #444;
+}
+
+.hero-content .hero-text{
+    font-size: 16px;
+}
+
+/*test*/
+.link-list {
+    display: grid;
+    grid-template-columns: 1fr;/**/
+    gap: 20px;
+}
+
+.link-wrapper {
+    width: 175px;
+    height: 40px;
+    padding: 0px;
+    overflow: hidden;
+    border-radius: 14px;
+    background: linear-gradient(145deg, #e6e6e6, #ffff);
+    box-shadow: 8px 8px 16px #d1d1d1, -8px -8px 16px #ffff;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.link-wrapper:hover {
+    background: linear-gradient(235deg, #0071a0, #709bdc);
+}
+
+.link-wrapper:hover .form-text,
+.link-wrapper:hover .front {
+    color: white;
+}
+
+.link-1 .form-text {
+    font-size: 12px;
+    color: #444;
+}
+
+.link-1 .front {
+    font-size: 15px;
+    color: #444;
+}
+
+/* MEDIA */
+@media (max-width: 1200px) {
+    .container-menu, .hero-form {
+        flex-direction: column;
+    }
+    .link-wrapper {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        flex-grow: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .link-wrapper {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        flex-grow: 1;
+    }
+
+    .container-menu {
+        grid-template-columns: repeat(3fr, 2fr);
+    }
+
+    .link-1 .form-text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width > 768px) {
+
+    
+    .link-wrapper {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .link-1 .form-text {
+        font-size: 14px;
+    }
+}
+
+/*test end*/
+
+
+.hero-content .form-text{
+    font-size: 20px;
+    color: #444;
+}
+
+.prelom{
+    border-top: 1px solid #0071a0;
+    margin-top: 20px;
+    padding-top: 15px;
+}
+
+/*=======================================
+                KREIRANJE
+=========================================*/
+
+.kreiranje-half-headline{
+    color: #444;
+    font-size: 36px;
+}
+
+.kreiranje-half-headline h3{
+    color: #0071a0;
+    margin-bottom: 30px;
+}
+
+.form-text p{
+    width: calc(100% - 28px);
+}
+
+
+/*======================================
+        ONLAJN OBUKE / Constants          
+  ======================================*/
+
+  .half-width {
+    flex: 1; 
+    max-width: 50%; 
+    padding: 20px;
+    background: whitesmoke;
+    box-shadow: 2px 2px 8px rgba(137, 152, 174, 0.2);
+    border-radius: 15px;
+}
+
+.half-width .school{
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #0071a0;
+    
+}
+
+.half-width .help{
+    font-size: 48px;
+    color: #0071a0;
+    margin-bottom: 10px;
+    
+}
+
+.half-width h2 {
+    padding-left: 0; 
+    margin-bottom: 20px;
+    font-size: clamp(1rem, 1vw + 0.5rem, 1.5rem); 
+    line-height: clamp(1.5, 2vw / 2, 2.5); 
+}
+
+.half-width .podnaslov{
+    margin-bottom: 10px;
+    background-color: #0071a0;
+    padding: 20px;
+    color: white;
+    width: calc(100% + 40px); 
+    margin-left: -20px; 
+    position: relative; 
+    top: -20px; 
+    box-shadow: 2px 2px 8px rgba(137, 152, 174, 0.7) ;
+    
+}
+
+.half-width ol {
+    margin: 0;
+    padding-top: 15px;
+    border-top: 1px solid #0071a0;
+    /* margin-left: 28px; */
+}
+
+.left-half{
+    border-top: 1px solid #0071a0;
+    padding-top: 15px;
+}
+
+.half-width li {
+    margin-bottom: 10px;
+    /* list-style:circle; */
+}
+
+/*===========================================
+               TESTIRANJE                    
+=============================================*/
+
+.half-width .bulb{
+    font-size: 48px;
+    color: #0071a0;
+    margin-bottom: 10px;
+    
+}
+
+/*============================================
+                IZVESTAJI                       
+==============================================*/
+
+/* .left-half .form-text{
+    color: #444;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 25px;
+} */
+
+.form-text span{
+    display: inline-block;
+    font-size: 15px;
+    color: #0071a0;
+}
+.image-container {
+    width: auto; 
+    display: flex;
+    justify-content: center;
+}
+
+.image-container img {
+    width: 100%; 
+    height: auto; 
+}
+
+
+/* =============================
+        Media queries           
+================================*/
+@media (max-width >= 1200px) {
+
+    .half-width {
+        max-width: 100%;
+        flex: 100%;
+        width: 100%;
+    }
+    .container-menu {
+        flex-direction: row;
+        align-items: center;
+    }
+    .link-1 .form-text {
+        font-size: 14px; 
+    }
+}
+
+@media (max-width: 992px) {
+
+    .half-width {
+        max-width: 100%;
+        flex: 100%;
+        width: 100%;
+    }
+
+    .container-menu {
+        flex-direction: row;
+        align-items: center;
+    }
+    .link-1 .form-text {
+        font-size: 14px; 
+    }
+}
+
+@media (max-width: 768px) {
+
+    .half-width {
+        max-width: 100%;
+        flex: 100%;
+        width: 100%;
+    }
+
+    .container-menu {
+        flex-direction: row;
+        align-items: center;
+    }
+    .link-1 .form-text {
+        font-size: 14px; 
+    }
+}
+
+@media (max-width: 576px) {
+    .half-width {
+        max-width: 100%;
+        flex: 100%;
+        width: 100%;
+    }
+
+    .container-menu {
+        flex-direction: row;
+        align-items: center;
+    }
+    .link-1 .form-text {
+        font-size: 14px; 
+    }
+}
+
+@media (max-width: 450px) {
+    .half-width {
+        max-width: 100%;
+        flex: 100%;
+        width: 100%;
+    }
+
+    .container-menu {
+        flex-direction: row;
+        align-items: center;
+    }
+    .link-1 .form-text {
+        font-size: 14px; 
+    }
+}

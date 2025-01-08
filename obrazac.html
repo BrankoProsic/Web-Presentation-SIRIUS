@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sirius Online</title>
+    <link rel="stylesheet" href="obrazac.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+
+    <!-- SVG -->
+    <link rel="icon" type="image/svg+xml" href="imgs/maliLogo.svg">
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <style>
+        /* Customize the year menu color */
+        .pika-select-year {
+            background-color: #ffffff; /* Change to your desired background color */
+            color: #333; /* Change to your desired text color */
+        }
+
+        /* Customize the date hover background color */
+        .pika-single td.is-today:hover,
+        .pika-single td.is-selected:hover,
+        .pika-single td:hover {
+            background-color: #f0f0f0; /* Change to your desired hover background color */
+            color: #333; /* Change to your desired hover text color */
+        }
+    </style>
+
+</head>
+<body>
+    <section class="prijava-container" id="prijava">
+        <header>PRIJAVA</header>
+        
+        <form action="#" class="form">
+            <div class="input-box">
+                <label for="ime">Ime</label>
+                <input type="text" placeholder="Unesite vaše ime" id="prijava-ime" required>
+            </div>
+            <div class="input-box">
+                <label for="prezime">Prezime</label>
+                <input type="text" placeholder="Unesite vaše prezime" id="prijava-prezime" required>
+            </div>
+            <div class="input-box">
+                <label for="email">Email</label>
+                <input type="email" placeholder="Unesite vaš email" id="prijava-email" required>
+            </div>
+            <div class="input-box">
+                <label for="phone">Telefon</label>
+                <input type="text" placeholder="Unesite vaš broj telefona" id="prijava-telefon">
+            </div>
+            <div class="input-box">
+                <label for="datetime">Datum rođenja</label>
+                <input type="datetime" placeholder="dd/mm/yyyy" id="prijava-datum-rodjenja" required>
+            </div>
+            <div class="input-box">
+                <label for="mesto-rodjenja">Mesto rođenja</label>
+                <input type="text" placeholder="Unesite mesto rođenja" id="prijava-mesto-rodjenja" required>
+            </div>
+
+            <div class="input-box">
+                <label for="options">Šifra radnog mesta</label>
+                <div class="custom-select" id="sifra-rm">
+                    <select id="options" name="options" required>
+                        <option value="" disabled selected>Odaberite šifru radnog mesta</option>
+                        <option value="1"><strong>1001</strong> - nastavnik razredne nastave</option>
+                        <option value="2">1002 - nastavnik predmetne nastave – osnovna škola</option>
+                        <option value="3">1003 - nastavnik predmetne nastave – gimnazija</option>
+                        <option value="4">1004 - nastavnik opšteobrazovnih predmeta – srednja stručna škola</option>
+                        <option value="5">1005 - nastavnik stručnih predmeta – srednja stručna škola</option>
+                        <option value="6">1006 - nastavnik u školi za obrazovanje učenika sa smetnjama u razvoju</option>
+                        <option value="7">1008 - nastavnik opšteobrazovnih predmeta u srednjoj umetničkoj školi (muzičke, 
+                            baletske, likovne)</option>
+                        <option value="8">1009 - nastavnik stručnog predmeta u osnovnoj/srednjoj umetničkoj školi (muzičke, 
+                            baletske, likovne)</option>
+                        <option value="9">1010 - nastavnik izbornih i fakultativnih programa/predmeta</option>
+                        <option value="10">1017 - direktor/pomoćnik direktora</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="input-box">
+                <label for="naziv-skole">Naziv škole u kojoj radite</label>
+                <input type="text" placeholder="Unesite naziv škole" id="prijava-naziv-skole" required>
+            </div>
+            <div class="input-box">
+                <label for="mesto-skole">Mesto škole</label>
+                <input type="text" placeholder="Unesite naziv škole" id="prijava-mesto-skole" required>
+            </div>
+            <div class="input-box">
+                <label for="opstina-skole">Mesto škole</label>
+                <input type="text" placeholder="Unesite naziv škole" id="prijava-opstina-skole" required>
+            </div>
+
+            <div class="input-box">
+                <label for="options">Godine radnog staža u prosveti</label>
+                <div class="custom-select" id="godine-staza">
+                    <select id="options" name="options" required>
+                        <option value="" disabled selected>Godine radnog staža u prosveti</option>
+                        <option value="1">0 - 2</option>
+                        <option value="2">3 - 7</option>
+                        <option value="3">8 - 15</option>
+                        <option value="4">16 -25</option>
+                        <option value="5">26 -35</option>
+                        <option value="6">preko 36</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="input-box">
+                <label for="options">Poslednji završeni nivo obrazovanja</label>
+                <div class="custom-select" id="nivo-obrazovanja">
+                    <select id="options" name="options" required>
+                        <option value="" disabled selected>Poslednji završeni nivo obrazovanja </option>
+                        <option value="1">Sresnji</option>
+                        <option value="2">Viši</option>
+                        <option value="3">Visoki</option>
+                        <option value="4">Master</option>
+                        <option value="5">Specijalizacija</option>
+                        <option value="6">Magistratura</option>
+                        <option value="7">Doktorat</option>
+                    </select>
+                </div>
+            </div>
+            
+        </form>
+        
+    </section>
+
+    <script src="index.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var picker = new Pikaday({
+                field: document.getElementById('prijava-datum-rodjenja'),
+                format: 'DD/MM/YYYY',
+                yearRange: [1924, new Date().getFullYear()],
+                i18n: {
+                    previousMonth : 'Prethodni mesec',
+                    nextMonth     : 'Sledeći mesec',
+                    months        : ['Januar','Februar','Mart','April','Maj','Jun','Jul','Avgust','Septembar','Oktobar','Novembar','Decembar'],
+                    weekdays      : ['Nedelja','Ponedeljak','Utorak','Sreda','Četvrtak','Petak','Subota'],
+                    weekdaysShort : ['Ned','Pon','Uto','Sre','Čet','Pet','Sub']
+                },
+                onSelect: function(date) {
+
+                    var day = ('0' + date.getDate()).slice(-2);
+                    var month = ('0' + (date.getMonth() + 1)).slice(-2);
+                    var year = date.getFullYear();
+                    var formattedDate = day + '/' + month + '/' + year;
+                    
+                    document.getElementById('prijava-datum-rodjenja').value = formattedDate;
+                }
+            });
+        });
+        
+    </script>
+</body>
+</html>
